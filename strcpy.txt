@@ -13,3 +13,6 @@ char* StrCpy(char* src) {
 	*a = '\0';
 	return a;
 }
+/**
+远程edit
+**/
