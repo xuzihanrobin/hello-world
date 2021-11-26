@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include <malloc.h>
+char* StrCpy(char* src) {
+	int len=1;
+	while (++src&&src!='\0') {
+		len++;
+	}
+	char* a = (char*)malloc(sizeof(char*) * (len + 1));
+	while (src != '\0') {
+		*a= *(src++);
+		a++;
+	}
+	*a = '\0';
+	return a;
+}
